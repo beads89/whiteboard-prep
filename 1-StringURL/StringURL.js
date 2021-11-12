@@ -16,25 +16,32 @@
 
 const string = "Jasmine Ann Jones"; // Set an input example
 
-function splitString(stringSplit) { // Create function that takes an argument
-    const arrayString = stringSplit.split(" ") // Take the argument and split into an array using spaces as the separator
-    return arrayString.join("%20") // Rejoin the string using %20 instead of spaces
+function splitString(stringSplit) {
+  // Create function that takes an argument
+  const arrayString = stringSplit.split(" "); // Take the argument and split into an array using spaces as the separator
+  return arrayString.join("%20"); // Rejoin the string using %20 instead of spaces
 }
 
-splitString(string) // Call the function with input example "string" as the argument
-
-
+splitString(string); // Call the function with input example "string" as the argument
 
 // Recursive:
 // Rereading curriculum to get better understanding of recursion https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/recursion
-// Create a function that has a termination call followed by a recursive call
-
-const string = "Jasmine Ann Jones";
+// Other resources: https://www.youtube.com/watch?v=6oDQaB2one8 https://www.youtube.com/watch?v=WPSeyjX1-4s
+// Create a function that has a termination call followed by a recursive call that replaces spaces with %20 then continues with the rest of the words
 
 const recurse = (string) => {
   if (string === "") {
-    return "recursion done"
+    return "";
+  } else if (string[string.length - 1] === " ") {
+    return recurse(string.substring(0, string.length - 1)) + "%20";
   } else {
-    
+    return (
+      recurse(string.substring(0, string.length - 1)) +
+      string[string.length - 1]
+    );
   }
-}
+};
+
+const string = "Jasmine Ann Jones";
+recurse(string);
+console.log(recurse(string));
