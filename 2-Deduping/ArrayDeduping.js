@@ -23,7 +23,13 @@ console.log(setArray);
 // Make use of array.prototype.filter() and array.prototype.indexOf()
 // Reread through mozilla docs for each prototype
 
-const array = [7, 9, "hi", 12, "hi", 7, 53]
+// Codebunk https://codebunk.com/b/6381100377994/
+
+const array = [7, 9, "hi", 12, "hi", 7, 53] // Define array
+
+let filterArray = array.filter(function(char, index) { // Create function that takes filtered arguments
+    return array.indexOf(char == index); // Use indexOf to return unique matches
+});
 
 
 
