@@ -29,7 +29,7 @@ function compression(string) { // Create function that takes a string as an argu
     if (count === 1) { // If letter only occured consecutively once
       stringOccurance += letter // Only output the letter and no number
     } else {
-      stringOccurance += count + letter; // If occured consecutively, output the number of times followed by the letter
+      stringOccurance += count + letter; // If occuring consecutively, output the number of times followed by the letter
     }
   }
   return stringOccurance
