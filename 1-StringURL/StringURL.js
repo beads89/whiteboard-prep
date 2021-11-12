@@ -31,15 +31,15 @@ splitString(string); // Call the function with input example "string" as the arg
 
 // Codebunk https://codebunk.com/b/1271100377928/
 
-const recurse = (string) => {
-  if (string === "") {
+const recurse = (string) => { // Create function that takes an argument
+  if (string === "") { // Termination case
     return "";
-  } else if (string[string.length - 1] === " ") {
-    return recurse(string.substring(0, string.length - 1)) + "%20";
+  } else if (string[string.length - 1] === " ") { // Turn string into array and look at the index position to see if it's a space
+    return recurse(string.substring(0, string.length - 1)) + "%20"; // If the index is a space, convert it to "%20" instead
   } else {
     return (
       recurse(string.substring(0, string.length - 1)) +
-      string[string.length - 1]
+      string[string.length - 1] // If index is not a space, return the character at that index
     );
   }
 };

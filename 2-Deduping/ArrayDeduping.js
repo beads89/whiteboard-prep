@@ -12,11 +12,18 @@
 
 // Codebunk https://codebunk.com/b/5761100377972/
 
-const array = [7, 9, "hi", 12, "hi", 7, 53]
+const array = [7, 9, "hi", 12, "hi", 7, 53] // Define array
 
-let setArray = [...new Set(array)];
+let setArray = [...new Set(array)]; // Use "Set" from ES6 to return a unique array
 
 console.log(setArray);
 
 
-// .filer() function:
+// .filter() function:
+// Make use of array.prototype.filter() and array.prototype.indexOf()
+// Reread through mozilla docs for each prototype
+
+const array = [7, 9, "hi", 12, "hi", 7, 53]
+
+
+
