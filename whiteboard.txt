@@ -1,0 +1,29 @@
+Codebunk - https://codebunk.com/b/3101100378108/
+
+// Write algorithm without using .filter(). Then write another one using .filter()
+// Array could be all numbers, all letters, or a combination of both.
+
+// Define an array
+// Set from ES6 returns a unique array
+
+// Solution not using .filter()
+
+// const array = [7, 9, "hi", 12, "hi", 7, 53] // Define array
+
+// let setArray = [...new Set(array)]; // Set by default returns a unique array with no duplicates
+
+// console.log(setArray);
+
+
+// Solution using .filter()
+
+// Define an array
+// Make use of array.prototype.filter() and array.prototype.indexOf() to find and only display unique matches with no duplicates
+
+const array = [7, 9, "hi", 12, "hi", 7, 53] // Define array
+
+let filteredArray = array.filter(function(char, index) { // Creates function that takes filtered arguments
+    return array.indexOf(char) == index; // indexOf returns unique matches
+});
+
+console.log(filteredArray);
