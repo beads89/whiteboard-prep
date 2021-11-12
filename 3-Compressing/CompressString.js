@@ -7,5 +7,9 @@
 // Output: "3ab2c4da"
 
 // Non-recursive:
-// Use reduce to compress string 
-// Sources: reduce Mozilla docs https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce and curriculum https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/map-reduce-and-filter
+// Use reduce to compress string? Split string into an array and count the letter occurance while checking if the next index is a matching letter(while loop?). Use if else to check the next index if conditions aren't met with while loop. Add number if it occurs simultaneously and don't if it doesn't
+// Sources: array.protoype.reduce() Mozilla docs https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce and curriculum https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/map-reduce-and-filter
+// While loop: W3 Schools https://www.w3schools.com/js/js_loop_while.asp and Mozilla Docs https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
+
+const string = aaabccdddda;
+
