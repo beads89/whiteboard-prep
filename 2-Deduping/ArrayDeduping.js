@@ -6,8 +6,17 @@
 
 // Output: [7, 9, "hi", 12, 53]
 
-// Non-recursive
+// Non-recursive: 
 // Remove duplicates from an array and output only the unique characters.
 // Use "Set" to return unique characters?
 
+// Codebunk https://codebunk.com/b/5761100377972/
 
+const array = [7, 9, "hi", 12, "hi", 7, 53]
+
+let setArray = [...new Set(array)];
+
+console.log(setArray);
+
+
+// .filer() function:
