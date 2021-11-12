@@ -16,8 +16,7 @@
 
 const string = "Jasmine Ann Jones"; // Set an input example
 
-function splitString(stringSplit) {
-  // Create function that takes an argument
+function splitString(stringSplit) { // Create function that takes an argument
   const arrayString = stringSplit.split(" "); // Take the argument and split into an array using spaces as the separator
   return arrayString.join("%20"); // Rejoin the string using %20 instead of spaces
 }
@@ -37,9 +36,7 @@ const recurse = (string) => { // Create function that takes an argument
   } else if (string[string.length - 1] === " ") { // Turn string into array and look at the index position to see if it's a space
     return recurse(string.substring(0, string.length - 1)) + "%20"; // If the index is a space, convert it to "%20" instead
   } else {
-    return (
-      recurse(string.substring(0, string.length - 1)) +
-      string[string.length - 1] // If index is not a space, return the character at that index
+    return (recurse(string.substring(0, string.length - 1)) + string[string.length - 1] // If index is not a space, return the character at that index
     );
   }
 };
