@@ -5,3 +5,9 @@
 // Input: [7, 9, "hi", 12, "hi" 7, 53]
 
 // Output: [7, 9, "hi", 12, 53]
+
+// Non-recursive
+// Remove duplicates from an array and output only the unique characters.
+// Use "Set" to return unique characters?
+
+
