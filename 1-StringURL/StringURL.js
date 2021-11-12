@@ -27,3 +27,14 @@ splitString(string) // Call the function with input example "string" as the argu
 
 // Recursive:
 // Rereading curriculum to get better understanding of recursion https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/recursion
+// Create a function that has a termination call followed by a recursive call
+
+const string = "Jasmine Ann Jones";
+
+const recurse = (string) => {
+  if (string === "") {
+    return "recursion done"
+  } else {
+    
+  }
+}
