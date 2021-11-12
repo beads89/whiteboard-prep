@@ -31,5 +31,6 @@ let filterArray = array.filter(function(char, index) { // Create function that t
     return array.indexOf(char == index); // Use indexOf to return unique matches
 });
 
-
-
+// Recursive:
+// Create an array then create conditionals based on length and push to output if it doesn't match the compared to string?
+// Sources: https://stackoverflow.com/questions/51217531/how-do-i-recursively-remove-consecutive-duplicate-elements-from-an-array-javas
