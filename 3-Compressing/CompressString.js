@@ -5,3 +5,7 @@
 // Input: "aaabccdddda"
 
 // Output: "3ab2c4da"
+
+// Non-recursive:
+// Use reduce to compress string 
+// Sources: reduce Mozilla docs https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce and curriculum https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/map-reduce-and-filter
