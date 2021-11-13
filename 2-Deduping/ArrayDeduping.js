@@ -28,7 +28,7 @@ console.log(setArray);
 const array = [7, 9, "hi", 12, "hi", 7, 53] // Define array
 
 let filterArray = array.filter(function(char, index) { // Create function that takes filtered arguments
-    return array.indexOf(char == index); // Use indexOf to return unique matches
+    return array.indexOf(char) == index; // Use indexOf to return unique matches
 });
 
 // Recursive:
